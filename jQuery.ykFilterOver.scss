@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.filter_blur {
+    -webkit-animation: filter_blur 300ms ease forwards;
+}
+
+.filter_sepia {
+    -webkit-animation: filter_sepia 300ms ease forwards;
+}
+
+.filter_invert {
+    -webkit-animation: filter_invert 300ms ease forwards;
+}
+
+@-webkit-keyframes filter_blur {
+    from {-webkit-filter:blur(0px)}
+    to {-webkit-filter:blur(10px)}
+}
+
+@-webkit-keyframes filter_sepia {
+    from {-webkit-filter:sepia(0%)}
+    to {-webkit-filter:sepia(100%)}
+}
+
+@-webkit-keyframes filter_invert {
+    from {-webkit-filter:sepia(0%)}
+    to {-webkit-filter:sepia(100%)}
+}
